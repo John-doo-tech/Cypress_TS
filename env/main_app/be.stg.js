@@ -1,19 +1,26 @@
 module.exports = {
   env: {
     be: {
-      host: "https://student-api-dev.kyons.vn",
+      host: "https://student-api-stg.kyons.vn",
       account: {
         system_admin: {
           email: "kyons.internal+auto_test_sa@gmail.com",
-          password: "-ndR9yhE",
+          password: "-vC41k24",
         },
       },
     },
-  },
-
-  e2e: {
-    setupNodeEvents(on, config) {
-      // implement node event listeners here
-    },
-  },
+    fe: {
+      host: "https://student-stg.kyons.vn",
+      account: {
+        student: [
+          {
+            student_id: 583,
+            student_name: "QA Hiep4",
+            email: "ddhiep448+stg_test4@gmail.com",
+            password: "Password@123"
+          }
+        ]
+      }
+    }
+  }
 };

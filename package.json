@@ -5,7 +5,7 @@
   "scripts": {
     "cy:info": "cypress info",
     "cy:open": "cypress open -C cypress.config",
-    "cy:run:chrome": "cypress run --headed --browser chrome -C cypress.config"
+    "cy:run:chrome": "cypress run --headed --browser chrome"
   },
   "repository": {
     "type": "git",
